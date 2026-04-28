@@ -24,7 +24,7 @@ public class CanchasDAO {
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Canchas cancha = new Canchas();
-                 
+
                 cancha.setIdCancha(rs.getInt("idCancha"));
                 cancha.setNombreCancha(rs.getString("nombreCancha"));
                 cancha.setTipoCancha(Canchas.tipoCancha.valueOf(rs.getString("tipoCancha").toUpperCase()));
@@ -34,7 +34,7 @@ public class CanchasDAO {
             }
             return lista;
         } catch (SQLException e) {
-            System.err.println("Error al insertar cancha: " + e.getMessage());
+            System.err.println("Error al listar cancha: " + e.getMessage());
             return null;
         }
 
@@ -68,4 +68,5 @@ public class CanchasDAO {
         }
     }
 
+    
 }

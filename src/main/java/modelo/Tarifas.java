@@ -48,6 +48,11 @@ public class Tarifas {
         this.precioHora = precioHora;
     }
 
+    @Override
+    public String toString() {
+        return "Tarifas{" + "idTarifa=" + idTarifa + ", categoria=" + categoria + ", precioHora=" + precioHora + '}';
+    }
+
     
     
 }

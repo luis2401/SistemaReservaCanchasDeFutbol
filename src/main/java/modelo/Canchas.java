@@ -1,4 +1,3 @@
-
 package modelo;
 
 /**
@@ -6,19 +5,19 @@ package modelo;
  * @author alonzo
  */
 public class Canchas {
-    
+
     private Integer idCancha;
     private String nombreCancha;
     private tipoCancha tipoCancha;
     private estadoCancha estadoCancha;
-    
+
     public enum tipoCancha {
         GRASS, LOSA;
     }
 
     public enum estadoCancha {
         DISPONIBLE, MANTENIMIENTO, OCUPADA;
-        
+
         public static final estadoCancha DEFAULT = DISPONIBLE;
     }
 
@@ -62,7 +61,10 @@ public class Canchas {
     public void setEstadoCancha(estadoCancha estadoCancha) {
         this.estadoCancha = estadoCancha;
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return nombreCancha + " (" + tipoCancha + ")";
+    }
+
 }

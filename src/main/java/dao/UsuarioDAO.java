@@ -1,6 +1,5 @@
 package dao;
 
-import com.mysql.cj.xdevapi.Result;
 import conexion.Conexion;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

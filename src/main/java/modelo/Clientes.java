@@ -7,7 +7,7 @@ package modelo;
  */
 public class Clientes {
     
-    private Long idCliente;
+    private int idCliente;
     private String nombreCliente;
     private String telefono;
     private String dni;
@@ -21,11 +21,11 @@ public class Clientes {
         this.dni = dni;
     }
 
-    public Long getIdCliente() {
+    public int getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(Long idCliente) {
+    public void setIdCliente(int idCliente) {
         this.idCliente = idCliente;
     }
 
@@ -51,6 +51,11 @@ public class Clientes {
 
     public void setDni(String dni) {
         this.dni = dni;
+    }
+
+    @Override
+    public String toString() {
+        return "Clientes{" + "idCliente=" + idCliente + ", nombreCliente=" + nombreCliente + ", telefono=" + telefono + ", dni=" + dni + '}';
     }
     
     
